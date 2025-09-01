@@ -4,13 +4,13 @@ A deep learning-based project for **real-time detection of diabetic foot ulcers 
 
 ---
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amputations. Manual diagnosis is often time-consuming and subjective. This project develops a **deep learning model** capable of detecting DFUs from thermogram images with high accuracy and deploys it for real-time use.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Detect diabetic vs. non-diabetic foot thermograms.
 * Use **MobileNetV2 with fine-tuning, L2 regularization, and dropout** for robust performance.
@@ -19,7 +19,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 * Input images are provided via **CSV splits**:
 
@@ -35,7 +35,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 🏗️ Model Architecture
+##  Model Architecture
 
 * **Base Model:** MobileNetV2 pretrained on ImageNet.
 * **Fine-tuning:** Last 30 layers unfrozen.
@@ -48,7 +48,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## ⚙️ Training Configuration
+##  Training Configuration
 
 * **Loss:** Categorical Crossentropy
 * **Optimizer:** Adam (lr = 3e-5)
@@ -62,7 +62,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 📊 Results
+##  Results
 
 * Accuracy and loss curves are plotted during training.
 * Final **test accuracy** is printed after evaluation.
@@ -70,7 +70,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 1. Convert trained model to **TensorFlow Lite (TFLite)** for Android app integration.
 2. Mobile workflow:
@@ -82,7 +82,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Languages:** Python, Java/Kotlin (for Android)
 * **Frameworks:** TensorFlow, Keras
@@ -91,7 +91,7 @@ Diabetic foot ulcers, if undiagnosed, can lead to severe complications and amput
 
 ---
 
-## 📌 Usage
+##  Usage
 
 ### Clone Repository
 
@@ -126,7 +126,7 @@ python convert_to_tflite.py
 
 ---
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Expand dataset for improved generalization.
 * Add **explainable AI** (Grad-CAM heatmaps).
